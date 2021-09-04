@@ -1,0 +1,90 @@
+<!-- 3 - Dentro de la pagina de contacto crear un formulario con al menos dos inputs de texto, tres radio buttons y un select con algunas opciones. -->
+<!-- 4 - Agregar al formulario de contacto un boton de reset, uno para enviar los datos y uno con el texto 'JS' para funcionalidades de los ejercicios de JS -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactos</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <script src="../script.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <header class="header-title" id="header">
+        <h1>Grupo Astronómico del Zulia</h1>
+        <nav>
+          <a class="links" href="..\index.html">Home</a>
+          <a class="links" href="contacto.html">Contactos</a>
+          <a class="links" href="about.html">Astronomía</a>
+          <button type="button" id="headerBtn" class="headerBtn">Click para cambiar de color</button>
+        </nav>
+      </header>
+
+    </div>
+    <main>
+      <h1>CONTACTOS</h1>
+      <h2>¡Comunícate con nosotros!</h2>
+      <form id="form" class="form">
+        <fieldset class="fieldset">
+          <legend><b>Información de contacto</b></legend>
+          <label for="nombre"> <b> Nombre</b></label>
+          <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre..."/>
+          <br />
+
+          <label for="apellido"><b>Apellido</b></label>
+          <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido"/>
+          <br />
+
+          <label for="correo"> <b> Correo electrónico</b></label>
+          <input type="email" name="correo" id="correo" placeholder="ejemplo@gaz.com"/>
+          <br />
+
+          <label for="edad"> <b> Edad</b></label>
+          <input type="number" name="edad" id="edad" max="99" min="1" />
+          <br />
+
+          <div><b>Género</b></div>
+          <label for="genero">Masculino</label>
+          <input type="radio" name="genero" id="genero" value="masculino" />
+          <label for="genero">Femenino</label>
+          <input type="radio" name="genero" id="genero" value="femenino" />
+          <label for="genero">Otro</label>
+          <input type="radio" name="genero" id="genero" value="otro" />
+          <br />
+
+          <label for="pais"> <b>Nacionalidad</b></label>
+          <select name="pais" id="pais">
+            <option value="argentina">Argentina</option>
+            <option value="brasil">Brasil</option>
+            <option value="venezuela">Venezuela</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="colombia">Colombia</option>
+            <option value="paraguay">Paraguay</option>
+            <option value="bolivia">Bolivia</option>
+            <option value="peru">Perú</option>
+            <option value="ecuador">Ecuador</option>
+            <option value="guyana">Guyana</option>
+            <option value="chile">Chile</option>
+            <option value="otro">Otro</option>
+          </select>
+          <!-- <button type="button" id="btn">Enviar</button> -->
+          <br><br>          
+          <button type="button" id="sendBtn">Enviar</button>
+          <button type="button""> JS</button>
+
+          <input type="reset" />
+        </fieldset>
+      </form>
+      <fieldset class="fieldset">
+        <legend> <b>Listado de Personas</b></legend>
+        <div id="contenedor-personas">         
+          
+        </div>
+      </fieldset>
+    </main>
+    <footer>Patricio Pagano - 2021</footer>
+  </body>
+</html>

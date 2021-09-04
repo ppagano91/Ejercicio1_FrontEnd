@@ -1,0 +1,59 @@
+/* 1 - Dar los estilos necesarios en cuanto a espacios, colores y layout general a los HTML. */
+/* 2 - Aplicar algunos efectos de hover a botones o enlaces. */
+main {
+  background-color: antiquewhite;
+}
+.header-title {
+  margin: 20px;
+  padding: 10px;
+  background-color: blue;
+  color: aliceblue;
+}
+.links {
+  color: aliceblue;
+  text-decoration: none;
+}
+.secciones {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagenes {
+  border-radius: 10px;
+  border: 1px solid #000;
+  object-position: center;
+  align-content: center;
+}
+
+.pie-imagen {
+  justify-content: center;
+  text-align: center;
+}
+
+.parrafos {
+  background-color: rgb(107, 144, 245);
+  text-align: justify;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+.fieldset {
+  background-color: #4362b8;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.headerBtn {
+  background-color: goldenrod;
+  padding: 5px;
+  color: black;
+  font-weight: "bold";
+  outline: none;
+  border: 2px solid black;
+  border-radius: 10px;
+}
